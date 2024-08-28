@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incuflex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Incuflex Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="slider" id="home">
+        <div class="slides">
+            <div class="slide">
+                <div class="caption">
+                    <h2>Incuflex: Flexible Business Solutions</h2>
+                    <p>Discover our powerful tools for business incubation and management.</p>
+                    <a href="#contact" class="btn">Request a Demo</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="caption">
+                    <h2>Business Plan Competition</h2>
+                    <p>Streamline your business competitions with ease.</p>
+                    <a href="#contact" class="btn">Request a Demo</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="caption">
+                    <h2>Virtual Business Incubation</h2>
+                    <p>Provide virtual support to startups anywhere, anytime.</p>
+                    <a href="#contact" class="btn">Request a Demo</a>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <span id="prevBtn">&#10094;</span>
+            <span id="nextBtn">&#10095;</span>
+        </div>
+    </section>
+
+    <section id="solutions">
+        <h2>Our Solutions</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="bpc.png" alt="Business Plan Competition">
+                <h3>Business Plan Competition</h3>
+                <p>Efficiently manage and evaluate business plan competitions with our dedicated solution.</p>
+                <a href="#" class="btn learn-more">Learn More</a>
+                <div class="full-description">
+                    <p>Our Business Plan Competition tool allows for easy submission, review, and management of business plans. It includes features like automated scoring, reporting, and collaboration tools for judges and participants.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="vbi.png" alt="Virtual Business Incubation">
+                <h3>Virtual Business Incubation</h3>
+                <p>Support entrepreneurs and startups remotely with our Virtual Business Incubation platform.</p>
+                <a href="#" class="btn learn-more">Learn More</a>
+                <div class="full-description">
+                    <p>The Virtual Business Incubation platform provides mentoring, resources, and networking opportunities for startups, regardless of their location. It includes tools for tracking progress, communication, and managing incubator resources.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="bms.png" alt="Business Management System">
+                <h3>Business Management System</h3>
+                <p>Comprehensive tools for managing businesses, from admin to operations.</p>
+                <a href="#" class="btn learn-more">Learn More</a>
+                <div class="full-description">
+                    <p>Our Business Management System offers a complete suite of tools for managing all aspects of a business, including accounting, HR, project management, and customer relations. It's designed to be flexible and scalable to meet the needs of growing businesses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <h2>Key Features</h2>
+        <div class="features">
+            <div class="feature-item">
+                <h3>System Administration</h3>
+                <p>Manage users, roles, and permissions with ease.</p>
+            </div>
+            <div class="feature-item">
+                <h3>User Management</h3>
+                <p>Control user access and track activities efficiently.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Incubation Management</h3>
+                <p>Seamlessly manage incubation processes from start to finish.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Collaboration</h3>
+                <p>Foster collaboration between incubators, mentors, and startups.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Reports & Analytics</h3>
+                <p>Generate detailed reports and gain insights into your business operations.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Flexibility</h3>
+                <p>Adapt our solutions to meet your specific business needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Telephone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="application">Select Application</label>
+            <select id="application" name="application" required>
+                <option value="Business Plan Competition">Business Plan Competition</option>
+                <option value="Virtual Business Incubation">Virtual Business Incubation</option>
+                <option value="Business Management System">Business Management System</option>
+            </select>
+
+            <label for="date">Preferred Date for Demo</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Incuflex. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
