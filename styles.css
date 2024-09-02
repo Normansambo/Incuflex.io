@@ -3,10 +3,14 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    background-image: url('background.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 header {
-    background-color: #f4f4f4;
+    background-color: rgba(244, 244, 244, 0.9);
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -28,7 +32,7 @@ nav ul li a {
     color: #007bff;
     text-decoration: none;
     padding: 8px 15px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 5s, color 5s;
 }
 
 nav ul li a:hover {
@@ -46,11 +50,11 @@ nav ul li a:hover {
     display: flex;
     width: 300%;
     height: 100%;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 10s ease-in-out;
 }
 
 .slide {
-    width: 100%;
+    flex: 1;
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -87,7 +91,7 @@ nav ul li a:hover {
 #solutions {
     padding: 50px 20px;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: rgba(244, 244, 244, 0.9);
 }
 
 .cards {
@@ -122,20 +126,27 @@ nav ul li a:hover {
     margin: 0 0 15px;
 }
 
-.card .full-description {
-    display: none;
-    margin-top: 15px;
-    color: #555;
+.card a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+    bottom: 15px;
+}
+
+.card a:hover {
+    text-decoration: underline;
 }
 
 .btn {
+    display: inline-block;
+    padding: 10px 20px;
     background-color: #007bff;
     color: white;
-    padding: 10px 20px;
-    text-decoration: none;
+    border: none;
     border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
 
 .btn:hover {
@@ -144,7 +155,7 @@ nav ul li a:hover {
 
 #features {
     padding: 50px 20px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
     text-align: center;
 }
 
@@ -156,7 +167,7 @@ nav ul li a:hover {
 }
 
 .feature-item {
-    background-color: #f4f4f4;
+    background-color: rgba(244, 244, 244, 0.9);
     padding: 20px;
     border-radius: 10px;
     max-width: 300px;
@@ -165,7 +176,7 @@ nav ul li a:hover {
 
 #contact {
     padding: 50px 20px;
-    background-color: #f4f4f4;
+    background-color: rgba(244, 244, 244, 0.9);
     text-align: center;
 }
 
@@ -205,3 +216,22 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+.brochure-download {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.download-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
